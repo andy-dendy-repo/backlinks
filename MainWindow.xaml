@@ -1,0 +1,43 @@
+﻿<Window x:Class="Backlinks_LE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Backlinks_LE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="518" Width="874">
+    <Grid>
+        <TextBox x:Name="tb_input" HorizontalAlignment="Left" Height="26" Margin="136,11,0,0" Text="C://work/source.txt" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+        <Label Content="Input data string:" HorizontalAlignment="Left" Margin="25,11,0,0" VerticalAlignment="Top" Height="26" Width="106"/>
+        <Button x:Name="bt_load" Content="Load" HorizontalAlignment="Left" Height="29" Margin="600,54,0,0" VerticalAlignment="Top" Width="180" Click="bt_load_Click"/>
+        <Label x:Name="lb_task" Content="Task:" HorizontalAlignment="Left" Margin="202,141,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lb_http_info_found" Content="_____" HorizontalAlignment="Left" Margin="110,141,0,0" VerticalAlignment="Top" Height="26" Width="106"/>
+        <Label Content="Current:" HorizontalAlignment="Left" Margin="36,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Output data string:" HorizontalAlignment="Left" Margin="25,217,0,0" VerticalAlignment="Top" Height="26" Width="122"/>
+        <TextBox x:Name="tb_output" HorizontalAlignment="Left" Height="26" Margin="174,220,0,0" Text="1BNByFf19-aRKa15SSES7U6KTFf8i1eKcZ872MUzY2i0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356"/>
+        <RadioButton x:Name="rb_save_text" Content="Text" HorizontalAlignment="Left" Margin="171,291,0,0" VerticalAlignment="Top" Width="55"/>
+        <RadioButton x:Name="rb_save_spreadsheet" Content="Spreadsheet" HorizontalAlignment="Left" Margin="30,291,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="bt_save" Content="Save" HorizontalAlignment="Left" Height="29" Margin="600,171,0,0" VerticalAlignment="Top" Width="180" Click="bt_save_Click"/>
+        <Button x:Name="bt_start" Content="Run" HorizontalAlignment="Left" Height="30" Margin="600,114,0,0" VerticalAlignment="Top" Width="180" Click="bt_start_Click"/>
+        <Button x:Name="bt_perform" Content="Perform" HorizontalAlignment="Left" Height="51" Margin="78,375,0,0" VerticalAlignment="Top" Width="148" Click="bt_perform_Click"/>
+        <Label Content="Delimeter:" HorizontalAlignment="Left" Margin="446,327,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_del" HorizontalAlignment="Left" Margin="522,331,0,0" Text="," TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="BacklinkIndex:" HorizontalAlignment="Left" Margin="426,350,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_blin" HorizontalAlignment="Left" Margin="522,354,0,0" Text="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DomainIndex:" HorizontalAlignment="Left" Margin="427,379,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_dlin" HorizontalAlignment="Left" Margin="522,383,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="PlainHttpThreads:" HorizontalAlignment="Left" Margin="407,405,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_pht" HorizontalAlignment="Left" Margin="522,408,0,0" Text="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="WebDriverThreads:" HorizontalAlignment="Left" Margin="400,431,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_wdt" HorizontalAlignment="Left" Margin="522,435,0,0" Text="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Domain:" HorizontalAlignment="Left" Margin="456,294,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_dom" HorizontalAlignment="Left" Margin="522,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <StackPanel HorizontalAlignment="Left" Height="58" Margin="36,62,0,0" VerticalAlignment="Top" Width="123" Background="#FFE6E3E3">
+            <RadioButton x:Name="rb_spreadsheet" Content="Spreadsheet" Width="95"/>
+            <RadioButton x:Name="rb_text" Content="Text" Width="55"/>
+            <RadioButton x:Name="rb_excel" Content="Excel" Width="55"/>
+        </StackPanel>
+        <RadioButton x:Name="rb_save_excel" Content="Excel" HorizontalAlignment="Left" Margin="259,292,0,0" VerticalAlignment="Top" Width="55"/>
+
+    </Grid>
+</Window>
